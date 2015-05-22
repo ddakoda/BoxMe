@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>BoxMe</title>
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+  </head>
+  <body>
+
+    <h2>Users are welcome here.</h2>
+
+    <form action="/sessions" method='post'>
+      <input type="hidden" name='_method' value='delete'>
+      <input type="submit" value='log-out'>
+    </form>
+
+
+    <!-- ****** JS Libraries ****** -->
+    <script src='/javascripts/lib/jquery.js'></script>
+    <script src='/javascripts/lib/underscore.js'></script>
+    <script src='/javascripts/lib/backbone.js'></script>
+
+    <!-- ****** Backbone Models ****** -->
+    <script src='/javascripts/models/BrandModel.js'></script>
+
+    <!-- ****** Backbone Collection ****** -->
+    <script src='/javascripts/collections/BrandCollection.js'></script>
+
+    <!-- ****** Application ****** -->
+    <script src='/javascripts/adminApp.js'></script>
+
+  </body>
+</html>
