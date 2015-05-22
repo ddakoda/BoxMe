@@ -11,32 +11,32 @@ class UsersController < Sinatra::Base
 
   # /api/users
   get '/' do
-    users = user.all
+    users = User.all
     content_type :json
     users.to_json(include: :foods)
   end
 
   get '/:id' do
-    user = user.find(params[:id])
+    user = User.find(params[:id])
     content_type :json
     user.to_json(include: :foods)
   end
 
   post '/' do
-    user = user.create(user_params)
+    user = User.create(user_params)
     content_type :json
     user.to_json(include: :foods)
   end
 
   patch '/:id' do
-    user = user.find(params[:id])
+    user = User.find(params[:id])
     user.update(user_params)
     content_type :json
     user.to_json(include: :foods)
   end
 
   put '/:id' do
-    user = user.find(params[:id])
+    user = User.find(params[:id])
     user.update(user_params)
     content_type :json
     user.to_json(include: :foods)
