@@ -1,0 +1,13 @@
+body{
+  background-color: peachpuff;
+}
+.brand-selected{
+  background-color: red;
+}
+.uder-selected{
+  background-color: pink;
+}
+.interface-list{
+  display: inline-block;
+  border: 3px solid red;
+}
