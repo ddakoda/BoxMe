@@ -3,6 +3,11 @@ class SessionsController < Sinatra::Base
   helpers Sinatra::SessionHelper
   use Rack::MethodOverride
 
+  # Do I need this?!
+  get '/pry' do
+    binding.pry
+  end
+  
   #  /sessions
   post '/' do
     user = User.find_by(:username => params[:username])

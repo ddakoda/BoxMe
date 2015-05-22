@@ -10,6 +10,11 @@ class BrandsController < Sinatra::Base
     body_data = body_data['brand'] || body_data
 end
 
+  # Do I need this?!
+  get '/pry' do
+    binding.pry
+  end
+
   # /api/brands
   get '/' do
     brands = Brand.all

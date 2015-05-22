@@ -7,3 +7,11 @@ gem 'bcrypt'
 gem 'json'
 gem 'rake'
 gem 'pry'
+
+
+# Testing
+group :test do
+  gem 'minitest'
+  gem 'minitest-reporters'
+  gem "rack-test"
+end

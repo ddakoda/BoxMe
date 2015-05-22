@@ -9,6 +9,11 @@ class UsersController < Sinatra::Base
     body_data = body_data['user'] || body_data
   end
 
+  # Do I need this?!
+  get '/pry' do
+    binding.pry
+  end
+
   # /api/users
   get '/' do
     users = User.all
