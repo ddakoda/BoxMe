@@ -32,7 +32,6 @@ require './controllers/welcome_controller'
 map('/api/brands') { run BrandsController.new() }
 map('/api/users') { run UsersController.new() }
 map('/api/items') { run ItemsController.new() }
-map('/api/purchases') { PurchasesController.new() }
 map('/sessions') { run SessionsController.new() }
 
 map('/') { run WelcomeController.new() }
