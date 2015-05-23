@@ -3,18 +3,18 @@ var app = app || {};
 $(document).ready(function(){
 
 
-  app.brands = new app.brandCollection({
+  app.brands = new app.BrandCollection({
     model: app.brandModel
   })
 
-  app.users = new app.userCollection({
+  app.users = new app.UserCollection({
     model: app.userModel
   })
 
   app.brandListPainter = new app.GeneralListView({
     modelView: app.BrandView,
     collection: app.brands,
-    el: $('#menu-list'),
+    el: $('#brand-list'),
   });
 
   app.userListPainter = new app.GeneralListView({

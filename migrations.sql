@@ -23,7 +23,7 @@ CREATE TABLE items (
 
 CREATE TABLE purchases (
   id SERIAL PRIMARY KEY,
-  users_id INTEGER,
+  user_id INTEGER,
   item_id INTEGER,
   is_paid BOOLEAN
   -- stripe_id VARCHAR(255)   -- This is unique to the order... so muliple purchases can be combined using this field
