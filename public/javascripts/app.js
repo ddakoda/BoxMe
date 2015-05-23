@@ -4,11 +4,11 @@ $(document).ready(function(){
 
 
   app.brands = new app.BrandCollection({
-    model: app.brandModel
+    model: app.BrandModel
   })
 
   app.users = new app.UserCollection({
-    model: app.userModel
+    model: app.UserModel
   })
 
   app.brandListPainter = new app.GeneralListView({
@@ -23,14 +23,14 @@ $(document).ready(function(){
     el: $('#user-list'),
   });
 
-  app.users.fetch();
   app.brands.fetch();
+  app.users.fetch();
 
   // Following Andrew's lead on this one
   $('#place-item').on('click', function(){
 
-    var userId = app.userSelection.get('id');
     var brandId = app.brandselection.get('id');
+    var userId = app.userSelection.get('id');
 
     $.ajax({
       method: 'post',
