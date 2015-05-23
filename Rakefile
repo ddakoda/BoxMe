@@ -32,68 +32,63 @@
       user.save!
     end
 
-    # Make a 'purchase'
-    namespace :demo do
-      desc 'purchase'
-      task :purchase do
-      puts 'purchase'
-    end
-
-    # Make 'nil'
-    desc 'Generate Nil'
-      task :nil_purchase do
-      Item.create({name: 'nil'})
-    end
-
     # Populate database with data
     desc "Fill Database some Junk Data"
       task :junk_data do
-    end
 
-    # Make random 'boxes' to buy
-    boxes = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
-    boxes_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
-    # sizes = ['Starter', 'Small', 'Large', 'Deluxe']
+      # Make random 'brand' to buy
+      brand = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
+      brand_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
+      # sizes = ['Starter', 'Small', 'Large', 'Deluxe']
       (rand(5..20)).times do
         Brand.create({
-          name: ( boxes.sample + ' ' + boxes_add_on.sample),
-          # size: sizes.sample
+          name: ( brand.sample + ' ' + brand_add_on.sample),
         })
-    end
+      end
 
-    # Make a random 'user'
-    (rand(5..20)).times do |num|
-      User.create({
-        name: Faker::Name.first_name,
-        password: 'password',
-
+      items = ['thangs', 'things', 'tings']
+      (rand(5..20)).times do
+        Item.create({
+          brand: Brand.all.sample,
+          name: items.sample,
         })
-    end
+      end
 
-    # Make random 'items'
-    item = Item.all
-    brands = Brand.all
-    (rand(5..20)).times do |num|
-      Item.create({
-        user: users.sample,
-        brand: brand.sample
+
+      (rand(5..20)).times do
+        user = User.new({
+          name: Faker::Internet.user_name,
         })
+        user.password = Faker::Internet.password
+        user.save
+      end
+
+      (rand(5..20)).times do
+        Purchase.create({
+          user: User.all.sample,
+          item: Item.all.sample
+        })
+      end
+
+
+      # #Make random 'items'
+      # brands = Brand.all
+      # users = User.all
+      # (rand(5..20)).times do |num|
+      #   Item.create({
+      #     user: users.sample,
+      #     brand: brand.sample
+      #   })
+      # end
+
+      # # make 'purchase of a box'
+      # desc 'brand to buy'
+      #   task :gen_purchase do
+      #     Purchase.create({name: 'purchase'})
+      #     Purchase.create({name: 'purchase'})
+      # end
+
     end
-
-    # # make 'purchases'
-    # desc 'Generate purchases'
-    #   task :create_item do
-    #     20.times { Item.create({name: Faker::Name.name}) }
-    # end
-
-    # make 'purchase of a box'
-    desc 'boxes to buy'
-      task :gen_purchase do
-        Purchase.create({name: 'purchase'})
-        Purchase.create({name: 'purchase'})
-    end
-
-  end
 
 
     # DROP THE DATABASE
