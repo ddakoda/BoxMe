@@ -64,7 +64,7 @@
     # Make a random 'user'
     (rand(5..20)).times do |num|
       User.create({
-        type_number: num,
+        user: users.sample,
         is_paid: [true, false, false].sample
         })
     end
