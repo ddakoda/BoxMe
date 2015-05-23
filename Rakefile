@@ -64,8 +64,9 @@
     # Make a random 'user'
     (rand(5..20)).times do |num|
       User.create({
-        user: users.sample,
-        is_paid: [true, false, false].sample
+        name: Faker::Name.first_name,
+        password: 'password',
+
         })
     end
 
@@ -79,11 +80,11 @@
         })
     end
 
-    # make 'purchases'
-    desc 'Generate purchases'
-      task :create_item do
-        20.times { Item.create({name: Faker::Name.name}) }
-    end
+    # # make 'purchases'
+    # desc 'Generate purchases'
+    #   task :create_item do
+    #     20.times { Item.create({name: Faker::Name.name}) }
+    # end
 
     # make 'purchase of a box'
     desc 'boxes to buy'
