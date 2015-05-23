@@ -39,7 +39,6 @@
       # Make random 'brand' to buy
       brand = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
       brand_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
-      # sizes = ['Starter', 'Small', 'Large', 'Deluxe']
       (rand(5..20)).times do
         Brand.create({
           name: ( brand.sample + ' ' + brand_add_on.sample),
@@ -69,24 +68,6 @@
           item: Item.all.sample
         })
       end
-
-
-      # #Make random 'items'
-      # brands = Brand.all
-      # users = User.all
-      # (rand(5..20)).times do |num|
-      #   Item.create({
-      #     user: users.sample,
-      #     brand: brand.sample
-      #   })
-      # end
-
-      # # make 'purchase of a box'
-      # desc 'brand to buy'
-      #   task :gen_purchase do
-      #     Purchase.create({name: 'purchase'})
-      #     Purchase.create({name: 'purchase'})
-      # end
 
     end
 
