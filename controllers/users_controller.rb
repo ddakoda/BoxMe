@@ -18,37 +18,37 @@ class UsersController < Sinatra::Base
   get '/' do
     users = User.all
     content_type :json
-    users.to_json(include: :foods)
+    users.to_json(include: :brands)
   end
 
   get '/:id' do
     user = User.find(params[:id])
     content_type :json
-    user.to_json(include: :foods)
+    user.to_json(include: :brands)
   end
 
   post '/' do
     user = User.create(user_params)
     content_type :json
-    user.to_json(include: :foods)
+    user.to_json(include: :brands)
   end
 
   patch '/:id' do
     user = User.find(params[:id])
     user.update(user_params)
     content_type :json
-    user.to_json(include: :foods)
+    user.to_json(include: :brands)
   end
 
   put '/:id' do
     user = User.find(params[:id])
     user.update(user_params)
     content_type :json
-    user.to_json(include: :foods)
+    user.to_json(include: :brands)
   end
 
   delete '/:id' do
-     user.destroy(params[:id])
+     User.destroy(params[:id])
      content_type :json
      {success: "ok"}.to_json
   end

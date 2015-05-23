@@ -53,9 +53,8 @@ end
 
   delete '/:id' do
     authenticate_api!
-     brand.destroy(params[:id])
+     Brand.destroy(params[:id])
      content_type :json
-     {success: "ok"}.to_json
+     {success: "okay"}.to_json
   end
-
 end

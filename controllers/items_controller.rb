@@ -13,7 +13,7 @@ class ItemsController < Sinatra::Base
   get '/pry' do
     binding.pry
   end
-  
+
   # /api/items
   get '/' do
     items = Item.all
@@ -48,8 +48,8 @@ class ItemsController < Sinatra::Base
   end
 
   delete '/:id' do
-     item.destroy(params[:id])
-     content_type :json
+     Item.destroy(params[:id])
+     content_type :json 
      {success: "ok"}.to_json
   end
 
