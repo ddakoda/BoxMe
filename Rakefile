@@ -32,41 +32,6 @@
       user.save!
     end
 
-    # Populate database with data
-    desc "Fill Database some Junk Data"
-      task :junk_data do
-    end
-
-    # Make random 'boxes' to buy
-    boxes = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
-    boxes_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
-    box_size = ['Starter', 'Small', 'Large', 'Deluxe']
-      rand(1..20).times do
-        Brand.create({
-        name: ( boxes.sample + ' ' + boxes_add_on.sample),
-        cents: rand(100..1000),
-        boxes: boxes.sample
-        })
-    end
-
-    # Make a random 'user'
-    rand (1..20).times do |num|
-      User.create({
-        type_number: num,
-        is_paid: [true, false, false].sample
-        })
-    end
-
-    # Make random 'items'
-    item = Item.all
-    brands = Brand.all
-    rand(1..20).times do |num|
-      Item.create({
-        user: users.sample,
-        brand: brand.sample
-        })
-    end
-
     # Make a 'purchase'
     namespace :demo do
       desc 'purchase'
@@ -80,10 +45,44 @@
       Item.create({name: 'nil'})
     end
 
+    # Populate database with data
+    desc "Fill Database some Junk Data"
+      task :junk_data do
+    end
+
+    # Make random 'boxes' to buy
+    boxes = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
+    boxes_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
+    # sizes = ['Starter', 'Small', 'Large', 'Deluxe']
+      (rand(5..20)).times do
+        Brand.create({
+          name: ( boxes.sample + ' ' + boxes_add_on.sample),
+          # size: sizes.sample
+        })
+    end
+
+    # Make a random 'user'
+    (rand(5..20)).times do |num|
+      User.create({
+        type_number: num,
+        is_paid: [true, false, false].sample
+        })
+    end
+
+    # Make random 'items'
+    item = Item.all
+    brands = Brand.all
+    (rand(5..20)).times do |num|
+      Item.create({
+        user: users.sample,
+        brand: brand.sample
+        })
+    end
+
     # make 'purchases'
     desc 'Generate purchases'
       task :create_item do
-        10.times { Item.create({name: Faker::Name.name}) }
+        20.times { Item.create({name: Faker::Name.name}) }
     end
 
     # make 'purchase of a box'
@@ -94,6 +93,7 @@
     end
 
   end
+
 
     # DROP THE DATABASE
     desc 'Empty Database'
