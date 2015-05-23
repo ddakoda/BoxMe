@@ -29,8 +29,8 @@ $(document).ready(function(){
   // Following Andrew's lead on this one
   $('#place-item').on('click', function(){
 
-    var brandId = app.brandSelection.get('id');
     var userId = app.userSelection.get('id');
+    var brandId = app.brandSelection.get('id');
 
     $.ajax({
       method: 'post',
