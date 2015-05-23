@@ -24,7 +24,6 @@ app.UserView = Backbone.View.extend({
   },
   events:{
     'click .select-user': 'selectUser'
-    // 'event css-selector': 'functionToCall'
   },
   select: function(){
     $('.user-selected').removeClass('user-selected');
