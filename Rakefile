@@ -43,7 +43,7 @@
     box_size = ['Starter', 'Small', 'Large', 'Deluxe']
       rand(1..20).times do
         Brand.create({
-        name: ( brands_starting.sample + ' ' + brand_ending.sample),
+        name: ( boxes.sample + ' ' + boxes_add_on.sample),
         cents: rand(100..1000),
         boxes: boxes.sample
         })
