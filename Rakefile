@@ -41,12 +41,12 @@
     boxes = ['Cat food', 'Coffee', 'Bathing Suits', 'Vegan Cookies']
     boxes_add_on = ['Cat toys', 'Mugs', 'Leashes', 'Cook Book']
     box_size = ['Starter', 'Small', 'Large', 'Deluxe']
-    Brand(1..20).times do
-      Brand.create({
-      name: ( brands_starting.sample + ' ' + brand_ending.sample),
-      cents: rand(100..1000),
-      boxes: boxes.sample
-      })
+      rand(1..20).times do
+        Brand.create({
+        name: ( brands_starting.sample + ' ' + brand_ending.sample),
+        cents: rand(100..1000),
+        boxes: boxes.sample
+        })
     end
 
     # Make a random 'user'
@@ -103,5 +103,5 @@
         Item.destroy_all
         Purchase.destroy_all
     end
-    
+
   end
