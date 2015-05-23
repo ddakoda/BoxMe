@@ -1,13 +1,17 @@
 body{
-  background-color: peachpuff;
-}
-.brand-selected{
-  background-color: red;
-}
-.user-selected{
-  background-color: pink;
-}
-.interface-list{
-  display: inline-block;
-  border: 3px solid red;
-}
+    background-color: peachpuff;
+  }
+
+  #brand-list{
+    background-color: red;
+  }
+
+  #user-list{
+    background-color: pink;
+  }
+
+  #place-item{
+    display: inline-block;
+    border: 3px solid red;
+  }
+  
