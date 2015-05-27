@@ -13,6 +13,25 @@
       Item
     </button>
 
+    <script type="text/javascript">
+
+      $('#place-item').on('click', function(){
+
+        var data = {item: app.selectedItem};
+
+        $.ajax({
+          url: '/item',
+          method: 'get',
+          data: data,
+          success: function(data){
+            $('')
+          }
+        })
+
+      });
+
+    </script>
+
 
     <!-- ****** JS Libraries ****** -->
     <script src='/javascripts/lib/jquery.js'></script>
