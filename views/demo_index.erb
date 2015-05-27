@@ -1,0 +1,30 @@
+<html>
+
+  <style media="screen">
+
+      body {
+        background-color: #<%= @brand.primary_color_hex %>;
+      }
+
+  </style>
+
+
+  <h2>Welcome to the <%= @brand.name %> boxing service</h2>
+
+  <h3><%= @brand.description %></h3>
+
+  <h5>We will mail you neat, interesting collections, and hand picked... packages full of <%= @brand.name %></h5>
+
+  <p>
+    We will mail you some of this!
+  </p>
+
+  <ul>
+    <% @brand.items.each do |item| %>
+      <li>
+        <%= item.name %>
+      </li>
+    <% end %>
+  </ul>
+
+</html>

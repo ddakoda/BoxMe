@@ -6,7 +6,10 @@ CREATE DATABASE box;
 CREATE TABLE brands (
   id SERIAL PRIMARY KEY,
   name VARCHAR(255),
-  description TEXT
+  description TEXT,
+  primary_color_hex VARCHAR(7),
+  secondary_color_hex VARCHAR(7),
+  tertiary_color_hex VARCHAR(7)
 );
 
 CREATE TABLE users (

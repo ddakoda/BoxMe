@@ -8,7 +8,7 @@ class BrandsController < Sinatra::Base
     @request_body ||= request.body.read.to_s
     body_data = (JSON(@request_body)) unless @request_body.empty?
     body_data = body_data['brand'] || body_data
-end
+  end
 
   # Do I need this?!
   get '/pry' do

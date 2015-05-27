@@ -42,6 +42,10 @@
       (rand(5..20)).times do
         Brand.create({
           name: ( brand.sample + ' ' + brand_add_on.sample),
+          description: 'We love sharing with you...',
+          primary_color_hex: ("%06x" % (rand * 0xffffff)),
+          secondary_color_hex: ("%06x" % (rand * 0xffffff)),
+          tertiary_color_hex: ("%06x" % (rand * 0xffffff)),
         })
       end
 
@@ -52,7 +56,6 @@
           name: items.sample,
         })
       end
-
 
       (rand(5..20)).times do
         user = User.new({

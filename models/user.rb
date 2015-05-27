@@ -2,8 +2,8 @@ class User < ActiveRecord:: Base
 
   include BCrypt
 
-  has_many :brands, :through => :items
-  has_many :items
+  has_many :purchases
+  has_many :items, through: :purchases
 
   def password
     @password ||= Password.new(self.password_hash)

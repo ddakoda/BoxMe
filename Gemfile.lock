@@ -42,6 +42,7 @@ GEM
       rack (>= 1.0)
     rake (10.4.2)
     ruby-progressbar (1.7.5)
+    sass (3.4.13)
     sinatra (1.4.6)
       rack (~> 1.4)
       rack-protection (~> 1.4)
@@ -68,5 +69,6 @@ DEPENDENCIES
   pry
   rack-test
   rake
+  sass
   sinatra
   sinatra-activerecord

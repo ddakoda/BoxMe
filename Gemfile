@@ -8,6 +8,7 @@ gem 'bcrypt'
 gem 'json'
 gem 'rake'
 gem 'pry'
+gem 'sass'
 
 
 # Testing
