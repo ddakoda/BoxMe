@@ -1,45 +1,60 @@
 <html>
-
-  <head>
+	<head>
     <title>BoxMe</title>
-
-    </head>
+    <link rel='shortcut icon' type='image/ico' href='images/favicon.ico'/>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>BoxMe</title>
+      <!-- <link rel='stylesheet' type='text/css' href='css/foundation.css'> -->
+      <!-- <link rel='stylesheet' href='css/normalize.css'> -->
+      <!-- <link rel='stylesheet' href='css/styles.css'> -->
+      <!-- <link rel='stylesheet' href='css/styles.css'> -->
+      <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+  </head>
 
   <body>
-
-    <!-- <nav>
-        <div class='nav'>
-        <div class='menu-btn' id='menu-btn'>
-        <div class='responsive-menu'>
-          <span class='fui-list-columned expand-menu'></span>
-        <div class='menu-container expand'>
-          <a href='/'>Home</a>
-          <a href='/admin'>Sign-Up</a>
-          <a href='/sessions/log-in'>Log-In</a>
+    <div class='off-canvas-wrap' data-offcanvas>
+      <div class='inner-wrap'>
+        <div class='nav mobile-menu'>
+          <a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
         </div>
-    </nav>
 
-</div>
-</div> -->
+        <aside class='left-off-canvas-menu active'>
+          <ul>
 
-      <ul class='brand-list' id='brand-list'>
-      </ul>
+            <li><a href='/sessions'>Sign-Up</a></li>
+            <li><a href='/sessions'>Sign-Out</a></li>
+            <li><a href='/sessions'>Home</a></li>
 
-      <button id='place-item'>
-        Item
-      </button>
+          </ul>
+        </aside>
 
+        <div class='container'>
+          <ul class='brand-list' id='brand-list'>
+          </ul>
+
+          <button id='place-item'>Item</button>
+
+          <div class='footer'>
+          </div>
+        </div>
+      </div>
+
+        <a class='exit-off-canvas'></a>
+
+      </div>
+    </div>
 
     <!-- ****** JS Libraries ****** -->
     <script src='/javascripts/lib/jquery.js'></script>
     <script src='/javascripts/lib/underscore.js'></script>
     <script src='/javascripts/lib/backbone.js'></script>
 
-    <!-- ****** Bootstrap Thangs ****** -->
-    <link rel="stylesheet" href="/stylesheets/styles.css">
-    <link href="/stylesheets/bootstrap.min.css" rel="stylesheet">
-    <link href="stylesheets/bootstrap-responsive.min.css" rel="stylesheet">
-    <script type="text/javascript" src="/javascripts/bootstrap.min.js"/>
+    <!-- ****** Foundation Thangs ****** -->
+    <link rel='stylesheet' href='/stylesheets/styles.css'>
+    <!-- <link href='/stylesheets/bootstrap.min.css' rel='stylesheet'>
+    <link href='stylesheets/bootstrap-responsive.min.css' rel='stylesheet'>
+    <script type='text/javascript' src='/javascripts/bootstrap.min.js'/> -->
 
     <!-- ****** Backbone Models ****** -->
     <script src='/javascripts/models/BrandModel.js'></script>
