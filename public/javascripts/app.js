@@ -14,6 +14,14 @@ $(document).ready(function(){
 
   app.brands.fetch();
 
+  // $(function(){
+  //
+  // $( '.menu-btn' ).click(function(){
+  //   $('.menu-container').toggleClass('expand');
+  //
+  // });
+
+
   // Following Andrew's lead on this one
   $('#place-item').on('click', function(){
 

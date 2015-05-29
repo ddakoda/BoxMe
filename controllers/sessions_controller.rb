@@ -7,7 +7,7 @@ class SessionsController < Sinatra::Base
   get '/pry' do
     binding.pry
   end
-  
+
   #  /sessions
   post '/' do
     user = User.find_by(:username => params[:username])
@@ -17,6 +17,7 @@ class SessionsController < Sinatra::Base
     else
       redirect '/'
     end
+
   end
 
   delete '/' do

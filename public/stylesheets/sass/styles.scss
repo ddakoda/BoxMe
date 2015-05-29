@@ -1,6 +1,6 @@
 // Brand Defined Colours
  $asset-white: rgba(44, 62, 79, 1);
- $asset-ljhkjh: rgba(0, 0, 0, .85);
+ $asset-color: rgba(4, 54, 107, .85);
  $asset-dsa: rgba(0, 0, 0, .85);
  $asset-sda: rgba(0, 0, 0, .85);
  $asset-dsa: rgba(0, 0, 0, .85);
@@ -16,6 +16,7 @@ body{
   background-size:cover;
   background-attachment:fixed;
   }
+
 
 #brand-list{
   background-color: $asset-white!important;
