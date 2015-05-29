@@ -14,6 +14,8 @@ $(document).ready(function(){
 
   app.brands.fetch();
 
+  // first let me hop out the motherfuckin porsche
+
   // $(function(){
   //
   // $( '.menu-btn' ).click(function(){
@@ -23,6 +25,7 @@ $(document).ready(function(){
 
 
   // Following Andrew's lead on this one
+  
   $('#place-item').on('click', function(){
 
     var brandId = app.brandSelection.id;

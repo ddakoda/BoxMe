@@ -17,7 +17,6 @@ class SessionsController < Sinatra::Base
     else
       redirect '/'
     end
-
   end
 
   delete '/' do
