@@ -1,70 +1,69 @@
 <html>
-	<head>
-    <title>BoxMe</title>
-    <link rel='shortcut icon' type='image/ico' href='images/favicon.ico'/>
-    <meta charset='UTF-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>BoxMe</title>
-      <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  </head>
+<head>
+	<title>BoxMe</title>
+	<link rel='shortcut icon' type='image/ico' href='images/favicon.ico'/>
+	<meta charset='UTF-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+</head>
 
-  <body>
-    <div class='off-canvas-wrap' data-offcanvas>
-      <div class='inner-wrap'>
-        <div class='nav mobile-menu'>
-          <a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
-        </div>
+<body>
+	<div class='off-canvas-wrap' data-offcanvas>
+		<div class='inner-wrap'>
+			<div class='nav mobile-menu'>
+				<a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
+			</div>
 
-        <aside class='left-off-canvas-menu active'>
-          <ul>
+			<aside class='left-off-canvas-menu active'>
+				<ul>
 
-            <li><a href='/admin'>Sign-Up</a></li>
-            <li><a href='/????????'>About Me</a></li>
-            <li><a href='/'>Home</a></li>
+					<li><a href='/admin'>Sign-Up</a></li>
+					<li><a href='/admin'>Sign-In</a></li>
+					<li><a href='/?'>About</a></li>
+					<li><a href='/'>Home</a></li>
 
-          </ul>
-        </aside>
+				</ul>
+			</aside>
 
-        <div class='container'>
-          <ul class='brand-list' id='brand-list'>
-          </ul>
+			<div class='container'>
+				<ul class='brand-list' id='brand-list'>
+				</ul>
 
-          <button id='place-item'>Item</button>
+				<button id='place-item'>Item</button>
 
-          <div class='footer'>
-          </div>
-        </div>
-      </div>
+				<div class='footer'>
+					<a href='about-footer'>About</a>
+				</div>
+			</div>
+		</div>
 
-        <a class='exit-off-canvas'></a>
+		<a class='exit-off-canvas'></a>
 
-      </div>
-    </div>
+	</div>
+</div>
 
-    <!-- ****** JS Libraries ****** -->
-    <script src='/javascripts/lib/jquery.js'></script>
-    <script src='/javascripts/lib/underscore.js'></script>
-    <script src='/javascripts/lib/backbone.js'></script>
+<!-- ****** JS Libraries ****** -->
+<script src='/javascripts/lib/jquery.js'></script>
+<script src='/javascripts/lib/underscore.js'></script>
+<script src='/javascripts/lib/backbone.js'></script>
+<script src='javascripts/foundation.min.js'></script>
 
-    <!-- ****** Foundation Thangs ****** -->
-    <link rel='stylesheet' href='/stylesheets/styles.css'>
-    <!-- <link href='/stylesheets/bootstrap.min.css' rel='stylesheet'>
-    <link href='stylesheets/bootstrap-responsive.min.css' rel='stylesheet'>
-    <script type='text/javascript' src='/javascripts/bootstrap.min.js'/> -->
+<!-- ****** Foundation Thangs ****** -->
+<link rel='stylesheet' href='/stylesheets/styles.css'>
 
-    <!-- ****** Backbone Models ****** -->
-    <script src='/javascripts/models/BrandModel.js'></script>
+<!-- ****** Backbone Models ****** -->
+<script src='/javascripts/models/BrandModel.js'></script>
 
-    <!-- ****** Backbone Collection ****** -->
-    <script src='/javascripts/collections/BrandCollection.js'></script>
+<!-- ****** Backbone Collection ****** -->
+<script src='/javascripts/collections/BrandCollection.js'></script>
 
-    <!-- ****** Backbone Views ****** -->
-    <script src='/javascripts/views/BrandView.js'></script>
-    <script src='/javascripts/views/GeneralListView.js'></script>
+<!-- ****** Backbone Views ****** -->
+<script src='/javascripts/views/BrandView.js'></script>
+<script src='/javascripts/views/GeneralListView.js'></script>
 
-    <!-- ****** JS Application ****** -->
-    <script src='/javascripts/app.js'></script>
+<!-- ****** JS Application ****** -->
+<script src='/javascripts/app.js'></script>
 
-  </body>
+</body>
 
 </html>

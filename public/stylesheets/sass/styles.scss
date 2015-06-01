@@ -42,7 +42,7 @@ html {
   background-color: none;
   height: 55px;
   border-radius: 5px;
-  border: 1px solid #000000;
+  border: 1px solid rgba(0, 0, 0, 1);
   padding: 20px;
   display: block;
   width: 180px;
@@ -55,7 +55,7 @@ html {
 	background-color: none;
 	height: 55px;
 	border-radius: 5px;
-	border: 1px solid #000000;
+	border: 1px solid rgba(0, 0, 0, 1);
 	padding: 20px;
 	display: block;
 	width: 180px;
@@ -68,7 +68,7 @@ html {
 	background-color: none;
 	height: 55px;
 	border-radius: 5px;
-	border: 1px solid #000000;
+	border: 1px solid rgba(0, 0, 0, 1);
 	padding: 20px;
 	display: block;
 	width: 180px;
@@ -137,11 +137,6 @@ li {
 	padding-right: 20%;
 }
 
-.diagram {
-	background: #ffffff;
-	height: 500px;
-}
-
 .description {
 	padding: 70px;
 	height: 500px;
@@ -149,12 +144,12 @@ li {
 
 a {
 	text-decoration: none;
-	color: #000000;
+	color: rgba(0, 0, 0, 1);
 }
 
 p a {
 	text-decoration: none;
-	color: #2b8c99;
+	color: rgba(43, 140, 153, 1);
 	font-weight: normal;
 
 }
@@ -164,7 +159,7 @@ p a:hover {
 }
 
 .left-off-canvas-menu a {
-	color: #999999;
+	color: rgba(153, 153, 153, 1);
 }
 
 a.active {
@@ -172,20 +167,20 @@ a.active {
 }
 
 a:hover {
-    color: #2b8c99;
+    color: rgba(43, 140, 153, 1);
 }
 
 a.button:hover {
-	border: 1px solid #2b8c99;
+	border: 1px solid rgba(43, 140, 153, 1);
 }
 
 .fa-bars {
 	font-size: 40px;
-	color: #ffffff;
+	color: rgba(0, 0, 0, 1);
 }
 
 .left-off-canvas-menu a:hover {
-	color: #ffffff;
+	color: rgba(0, 0, 0, 1);
 }
 
 .links a {
@@ -193,11 +188,11 @@ a.button:hover {
 }
 
 .hero .button {
-	color: #ffffff;
+	color: rgba(0, 0, 0, 1);
 	background-color: none;
 	height: 55px;
 	border-radius: 5px;
-	border: 1px solid #ffffff;
+	border: 1px solid rgba(0, 0, 0, 1);
 	padding: 20px;
 	display: block;
 	width: 180px;
@@ -207,11 +202,11 @@ a.button:hover {
 }
 
 .button {
-	color: #000000;
+	color: rgba(0, 0, 0, 1);
 	background-color: none;
 	height: 55px;
 	border-radius: 5px;
-	border: 1px solid #000000;
+	border: 1px solid rgba(0, 0, 0, 1);
 	padding: 20px;
 	display: block;
 	width: 180px;
@@ -246,14 +241,14 @@ h2 {
 
 p {
 	line-height: 1.4;
-	color: #000000;
+	color: rgba(0, 0, 0, 1);
 	margin-bottom: 40px;
 }
 
 .definition {
 	margin-bottom: 30px;
 	line-height: 1.4;
-	color: #000000;
+	color: rgba(0, 0, 0, 1);
 }
 
 h3 {
@@ -275,7 +270,7 @@ img {
 
 @media only screen and (max-width: 800px) {
 	html { font-size: 1em;}
-	.diagram {width: 100%;}
+	// .diagram {width: 100%;}
 	.description {width: 100%; padding-left: 5%; padding-right: 5%;}
 	.links a {display: block;}
 	.hero {padding-left: 40px; padding-right: 40px;}
@@ -286,7 +281,7 @@ img {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
-	content: " ";
+	content: ' ';
 	clear: both;
 	height: 0;
 }

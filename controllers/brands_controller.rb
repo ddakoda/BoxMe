@@ -55,6 +55,6 @@ class BrandsController < Sinatra::Base
     authenticate_api!
      Brand.destroy(params[:id])
      content_type :json
-     {success: "okay"}.to_json
+     {success: 'okay'}.to_json
   end
 end

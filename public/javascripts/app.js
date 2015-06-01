@@ -14,22 +14,21 @@ $(document).ready(function(){
 
   app.brands.fetch();
 
-  // first let me hop out the motherfuckin porsche
+  $(document).ready(function () {
 
-  // $(function(){
-  //
-  // $( '.menu-btn' ).click(function(){
-  //   $('.menu-container').toggleClass('expand');
-  //
-  // });
+       $('.left-off-canvas-toggle').click(offCanvasWrap);
 
+   });
 
-  // Following Andrew's lead on this one
-  
+  function offCanvasWrap() {
+         $('.left-off-canvas-menu fa fa-bars fa-lg').css('display', 'none');
+         $('.' + $(this).data('listname')).css('display','block');
+
+     }
+
   $('#place-item').on('click', function(){
 
     var brandId = app.brandSelection.id;
-
     $.ajax({
       method: 'post',
       url: '/api/items',

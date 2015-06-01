@@ -49,8 +49,8 @@ class ItemsController < Sinatra::Base
 
   delete '/:id' do
      Item.destroy(params[:id])
-     content_type :json 
-     {success: "ok"}.to_json
+     content_type :json
+     {success: 'ok'}.to_json
   end
 
 end

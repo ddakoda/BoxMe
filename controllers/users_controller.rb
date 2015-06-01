@@ -50,7 +50,7 @@ class UsersController < Sinatra::Base
   delete '/:id' do
      User.destroy(params[:id])
      content_type :json
-     {success: "ok"}.to_json
+     {success: 'ok'}.to_json
   end
 
 
