@@ -14,17 +14,12 @@ $(document).ready(function(){
 
   app.brands.fetch();
 
-  $(document).ready(function () {
+  $('.left-off-canvas-menu').hide();
 
-       $('.left-off-canvas-toggle').click(offCanvasWrap);
+  $('.left-off-canvas-toggle').on("click", function(evt){evt.preventDefault();
 
-   });
+    $('.left-off-canvas-menu').slideToggle("slow");});
 
-  function offCanvasWrap() {
-         $('.left-off-canvas-menu fa fa-bars fa-lg').css('display', 'none');
-         $('.' + $(this).data('listname')).css('display','block');
-
-     }
 
   $('#place-item').on('click', function(){
 

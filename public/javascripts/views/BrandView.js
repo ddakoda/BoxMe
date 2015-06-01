@@ -6,7 +6,7 @@ app.BrandView = Backbone.View.extend({
     this.listenTo(this.model,'change', this.render);
     this.listenTo(this.model,'delete', this.remove);
   },
-  template: _.template('<h3><%= name %></h3><button class='select-brand'>Select</button>'),
+  template: _.template('<h3><%= name %></h3><button class="select-brand">Select</button>'),
   tagName: 'li',
   className: 'brand',
   render: function(){
