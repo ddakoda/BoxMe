@@ -29,7 +29,6 @@ $(document).ready(function(){
       url: '/api/items',
       data: {item: {brand_id: brandId} },
       success: function(){
-        // app.users.fetch( {reset: true} );
 
         $('.brand-selected').removeClass('brand-selected');
       }

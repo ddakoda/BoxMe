@@ -80,7 +80,36 @@ html {
 	background: rgba(38, 174, 188, 1);
 	padding: 35px;
   height: 250px;
+}
 
+#nav-title{
+  color: rgba(255, 255, 255, 1);
+  // font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+  font-family: Garamond, Baskerville, “Baskerville Old Face”, “Hoefler Text”, “Times New Roman”, serif;
+  font-size: 200px;
+  height: 250px;
+  border-radius: 10px;
+  width: 200px;
+  margin-left: 400px;
+  margin-right: 250px;
+  -webkit-animation-duration: 2s;
+  animation-duration: 3s;
+  -webkit-animation-name: bounceIn;
+  animation-name: bounceIn;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 ul {
