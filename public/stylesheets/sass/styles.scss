@@ -61,6 +61,7 @@ html {
 	width: 180px;
 	margin-left: auto;
 	margin-right: auto;
+  animation: bounceIn 3s;
 }
 
 #place-item{
@@ -79,7 +80,7 @@ html {
 .nav {
 	background: rgba(38, 174, 188, 1);
 	padding: 35px;
-  height: 250px;
+  height: 350px;
 }
 
 #nav-title{
