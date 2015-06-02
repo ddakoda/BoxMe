@@ -11,7 +11,7 @@
  $second-font: 'Helvetica', Helvetica;*/
 
 
-body{
+body {
   background-image: url('http://i.imgur.com/eXVaXpE.jpg');
   background-size:cover;
   background-attachment:fixed;
@@ -28,7 +28,7 @@ html {
 	width: 100%;
 }
 
-#brand-list{
+#brand-list {
   background: rgba(255, 255, 255, 0.4);
 	text-align: center;
 	padding-top: 10px;
@@ -37,7 +37,7 @@ html {
 	padding-bottom: 80px;
 }
 
-#user-list{
+#user-list {
   background-color: rgba(255, 255, 255, .35);
   background-color: none;
   height: 55px;
@@ -50,7 +50,7 @@ html {
   margin-right: auto;
   }
 
-.select-brand{
+.select-brand {
   background-color: rgba(255, 255, 255, .35);
 	background-color: none;
 	height: 55px;
@@ -83,16 +83,16 @@ html {
   height: 350px;
 }
 
-#nav-title{
+#nav-title {
   color: rgba(255, 255, 255, 1);
   // font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
   font-family: Garamond, Baskerville, “Baskerville Old Face”, “Hoefler Text”, “Times New Roman”, serif;
-  font-size: 200px;
+  font-size: 220px;
   height: 250px;
   border-radius: 10px;
   width: 200px;
   margin-left: 400px;
-  margin-right: 250px;
+  margin-right: 300px;
   -webkit-animation-duration: 2s;
   animation-duration: 3s;
   -webkit-animation-name: bounceIn;
@@ -181,7 +181,6 @@ p a {
 	text-decoration: none;
 	color: rgba(43, 140, 153, 1);
 	font-weight: normal;
-
 }
 
 p a:hover {
@@ -207,6 +206,17 @@ a.button:hover {
 .fa-bars {
 	font-size: 40px;
 	color: rgba(255, 255, 255, .5);
+}
+
+.fb-shopping-bars {
+	font-size: 40px;
+	color: rgba(255, 255, 255, .5);
+}
+
+.fa-3x {
+  color: rgba(255, 255, 255, .5);
+  fill: currentColor;
+  float: right;
 }
 
 .left-off-canvas-menu a:hover {
