@@ -28,7 +28,7 @@ $(document).ready(function(){
       method: 'post',
       url: '/api/items',
       data: {item: {brand_id: brandId} },
-      success: function(){
+      success: function(data){
 
         // Right here.... do that chnage of page
 
