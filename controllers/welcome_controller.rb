@@ -12,8 +12,15 @@ class WelcomeController < Sinatra::Base
 
   # /
   get '/' do
+    erb :about
+  end
+
+# About Me page
+  get '/index' do
     erb :index
   end
+
+# Admin
 
   get '/admin' do
     if current_user
@@ -22,4 +29,5 @@ class WelcomeController < Sinatra::Base
       erb :not_authenticated
     end
   end
+
 end

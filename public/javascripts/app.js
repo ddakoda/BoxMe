@@ -30,7 +30,8 @@ $(document).ready(function(){
       data: {item: {brand_id: brandId} },
       success: function(){
 
-        $('.brand-selected').removeClass('brand-selected');
+        // Right here.... do that chnage of page
+
       }
     });
 
