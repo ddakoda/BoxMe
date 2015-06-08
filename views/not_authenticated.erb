@@ -1,13 +1,51 @@
 <html>
   <head>
     <title>BoxMe</title>
+    <link rel='shortcut icon' type='image/ico' href='images/favicon.ico'/>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
     <link rel='stylesheet' href='/stylesheets/styles.css'>
   </head>
-  <body>
 
-    <h2>Brand Admin</h2>
+    <body>
+    	<div class='off-canvas-wrap' data-offcanvas>
+    		<div class='inner-wrap'>
+    			<div class='nav mobile-menu'>
+    				<a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
+    				<a class='right-off-canvas-toggle fa fa-shopping-cart fa-3x' href='#'></a>
+    				<div id='nav-title'>Box.Me</div>
+    			</div>
 
-    <a href='/'>Click here if user.</a>
+    			<aside class='left-off-canvas-menu active'>
+    				<ul>
+
+    					<li><a href='/'>Home</a></li>
+    					<li><a href='/admin'>Sign-In</a></li>
+    					<li><a href='/admin'>Sign-Up</a></li>
+    					<li><a href='/about'>About</a></li>
+
+    				</ul>
+    			</aside>
+
+    			<div class='container-log-in'>
+
+            <form action='/sessions' method='post'>
+              <input type='text' name='name' placeholder='username'><br><br>
+              <input type='text' name='password_hash' placeholder='password'><br><br>
+              <input type='submit' value='log in'>
+            </form>
+
+    				<div class='footer'>
+              <a href='/'>Click here if user.</a>
+    				</div>
+    			</div>
+    		</div>
+
+    		<a class='exit-off-canvas'></a>
+
+    	</div>
+    </div>
 
     <!-- <form action='/sessions' method='post'>
       <input type='text' name='Username' placeholder='username'>
@@ -15,11 +53,29 @@
       <input type='submit' value='sign up'>
     </form> -->
 
-    <form action='/sessions' method='post'>
-      <input type='text' name='name' placeholder='username'>
-      <input type='text' name='password_hash' placeholder='password'>
-      <input type='submit' value='log in'>
-    </form>
+
+    <!-- ****** JS Libraries ****** -->
+    <script src='/javascripts/lib/jquery.js'></script>
+    <script src='/javascripts/lib/underscore.js'></script>
+    <script src='/javascripts/lib/backbone.js'></script>
+    <script src='javascripts/foundation.min.js'></script>
+
+    <!-- ****** Foundation Thangs ****** -->
+    <link rel='stylesheet' href='/stylesheets/styles.css'>
+
+    <!-- ****** Backbone Models ****** -->
+    <script src='/javascripts/models/BrandModel.js'></script>
+
+    <!-- ****** Backbone Collection ****** -->
+    <script src='/javascripts/collections/BrandCollection.js'></script>
+
+    <!-- ****** Backbone Views ****** -->
+    <script src='/javascripts/views/BrandView.js'></script>
+    <script src='/javascripts/views/GeneralListView.js'></script>
+
+    <!-- ****** JS Application ****** -->
+    <script src='/javascripts/app.js'></script>
+
 
   </body>
 </html>
