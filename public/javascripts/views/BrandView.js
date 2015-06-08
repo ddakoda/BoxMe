@@ -6,11 +6,11 @@ app.BrandView = Backbone.View.extend({
     this.listenTo(this.model,'change', this.render);
     this.listenTo(this.model,'delete', this.remove);
   },
-  template: _.template('<img class="boxyart" src="img/BoxyArt.png"/><h1><b><%= name %></b></h1> <button class="select-brand">Select</button>'),
+  template: _.template('<img class="boxyart" src="img/BoxyArt.png"/><h1><%= name %></h1> <button class="select-brand">Get It Tho</button>'),
   tagName: 'li',
   className: 'brand',
   render: function(){
-    this.$el.append( this.template( this.model.attributes ) );
+    this.$el.append(this.template (this.model.attributes ) );
     return this;
   },
   events:{
