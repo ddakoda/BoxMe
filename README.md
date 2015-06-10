@@ -1,6 +1,6 @@
 # BoxMe
 
-Table Of Contents
+## Table Of Contents
 
 Timeline
 Spiking
@@ -27,7 +27,7 @@ A custom eCommerce that would turn into software as a service for companies that
 
 ### MVP
 
-####### Defining the MVP:
+###### Defining the MVP:
 
 A template/build it yourself site with a subscription based service. An eCommerce app that can have artisan goods boxed and sent to customers on a monthly or quarterly calendar.
 
@@ -41,11 +41,11 @@ https://github.com/ddakoda/BoxMe
 
 ###### Entity Relationship Diagram:
 
-[http://i.imgur.com/FsCkYdq.png]
+![img](http://i.imgur.com/FsCkYdq.png)
 
 ###### Several Wireframes:
 
-[http://i.imgur.com/5bAst4l.png]
+![img](http://i.imgur.com/5bAst4l.png)
 
 ###### Blockers
 
