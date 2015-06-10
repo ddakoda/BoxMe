@@ -25,6 +25,11 @@ form {
 	width: 100%;
 }
 
+#container-content {
+	margin: 0 auto;
+	width: 100%;
+}
+
 #brand-list {
   background: rgba(255, 255, 255, 0.4);
 	text-align: center;
@@ -32,6 +37,15 @@ form {
 	padding-left: 200px;
 	padding-right: 200px;
 	padding-bottom: 80px;
+}
+
+#content{
+    background: rgba(255, 255, 255, 0.4);
+  	text-align: center;
+  	padding-top: 10px;
+  	padding-left: 200px;
+  	padding-right: 200px;
+  	padding-bottom: 80px;
 }
 
 #user-list {
@@ -72,6 +86,20 @@ form {
 	width: 180px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.button-footer {
+  background-color: rgba(255, 255, 255, .35);
+	background-color: none;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 20px;
+  display: block;
+  width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+  animation: bounceIn 3s;
 }
 
 .nav {
