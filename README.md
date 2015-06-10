@@ -1,6 +1,6 @@
 # BoxMe
 
-## Table Of Contents
+Table Of Contents
 
 Timeline
 Spiking
@@ -41,11 +41,11 @@ https://github.com/ddakoda/BoxMe
 
 ###### Entity Relationship Diagram:
 
-[Imgur](http://i.imgur.com/FsCkYdq.png)
+[(http://i.imgur.com/FsCkYdq.png)]
 
 ###### Several Wireframes:
 
-[Imgur](http://i.imgur.com/5bAst4l.png)
+[(http://i.imgur.com/5bAst4l.png)]
 
 ###### Blockers
 
@@ -55,13 +55,13 @@ Sign-up and log-in - routing these to the right places.
 
 ###### Problem Solving
 
-####### Justifying solutions to problems encountered throughout the project.
+###### Justifying solutions to problems encountered throughout the project.
 
 Bootstrap vs foundation - working on finding a solution to style the app while maintaining continuity throughout the site.
 
-####### Wins
+###### Wins
 
-####### Small/large victories that were achieved throughout the project.
+###### Small/large victories that were achieved throughout the project.
 
 Learning how to use foundation and feeling really comfortable moving around font-awesome.
 
