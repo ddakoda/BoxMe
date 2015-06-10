@@ -147,11 +147,11 @@ li {
 }
 
 .footer {
-  background: rgba(238, 238, 238, 1);
+  background: rgba(238, 238, 238, .65);
 	text-align: center;
-	padding-top: 60px;
-	padding-bottom: 60px;
-	margin-top: 60px;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	margin-top: 100px;
 }
 
 .column {
@@ -263,7 +263,7 @@ a.button:hover {
 }
 
 h1 {
-	font-size: 40px;
+	font-size: 18px;
 	font-weight: 100;
 	display: block;
 	padding-bottom: 10px;
