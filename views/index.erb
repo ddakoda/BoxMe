@@ -5,6 +5,7 @@
 	<meta charset='UTF-8'>
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<link rel='stylesheet' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<script src='/javascripts/lib/jquery.js'></script>
 </head>
 
 <body>
@@ -12,9 +13,39 @@
 		<div class='inner-wrap'>
 			<div class='nav mobile-menu'>
 				<a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
-				<a class='right-off-canvas-toggle fa fa-shopping-cart fa-3x' href='#'></a>
+				<a class='fa fa-shopping-cart fa-3x'></a>
 				<div id='nav-title'>Box.Me</div>
 			</div>
+
+			<script src="https://checkout.stripe.com/checkout.js"></script>
+
+			<!-- <button id="customButton">Purchase</button> -->
+
+			<script>
+			  var handler = StripeCheckout.configure({
+			    key: 'pk_test_5NFYWWZlvwFfX0nz6YCwMlMz',
+			    image: '/img/documentation/checkout/marketplace.png',
+			    token: function(token) {
+			      // Use the token to create the charge with a server-side script.
+			      // You can access the token ID with `token.id`
+			    }
+			  });
+
+			  $('.fa-3x').on('click', function(e) {
+			    // Open Checkout with further options
+			    handler.open({
+			      name: 'Stripe.com',
+			      description: '2 widgets',
+			      amount: 2000
+			    });
+			    e.preventDefault();
+			  });
+
+			  // Close Checkout on page navigation
+			  $(window).on('popstate', function() {
+			    handler.close();
+			  });
+			</script>
 
 			<aside class='left-off-canvas-menu active'>
 				<ul>
@@ -22,7 +53,7 @@
 					<li><a href='/'>Home</a></li>
 					<li><a href='/admin'>Sign-In</a></li>
 					<li><a href='/admin'>Sign-Up</a></li>
-					<li><a href='/about'>About</a></li>
+					<li><a href='/demo'>Demo</a></li>
 
 				</ul>
 			</aside>
@@ -40,12 +71,13 @@
 		</div>
 
 		<a class='exit-off-canvas'></a>
+				<a class='left-off-canvas-toggle fa fa-bars fa-lg' href='#'></a>
+				<a class='fa fa-shopping-cart fa-3x'></a>
 
 	</div>
 </div>
 
 <!-- ****** JS Libraries ****** -->
-<script src='/javascripts/lib/jquery.js'></script>
 <script src='/javascripts/lib/underscore.js'></script>
 <script src='/javascripts/lib/backbone.js'></script>
 <script src='javascripts/foundation.min.js'></script>
