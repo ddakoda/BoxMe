@@ -1,29 +1,3 @@
-// var app = app || {};
-//
-// app.brands = new BrandCollection({
-//   model: app.BrandModel
-// });
-//
-// app.brands.fetch();
-//
-// $(document).ready(function(){
-//
-//   app.brands.fetch();
-//
-//   $('.left-off-canvas-menu').hide();
-//
-//   $('.left-off-canvas-toggle').on("click", function(evt){evt.preventDefault();
-//
-//     $('.left-off-canvas-menu').slideToggle("slow");});
-//
-//   }
-// });
-//
-// });
-//
-// });
-//
-
 alert('ya it is')
 var app = app || {};
 
