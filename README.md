@@ -41,11 +41,11 @@ https://github.com/ddakoda/BoxMe
 
 ###### Entity Relationship Diagram:
 
-[(http://i.imgur.com/FsCkYdq.png)]
+[http://i.imgur.com/FsCkYdq.png]
 
 ###### Several Wireframes:
 
-[(http://i.imgur.com/5bAst4l.png)]
+[http://i.imgur.com/5bAst4l.png]
 
 ###### Blockers
 
