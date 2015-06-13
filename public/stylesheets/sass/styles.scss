@@ -340,24 +340,6 @@ img {
 	padding-top: 0px;
 }
 
-@media only screen and (max-width: 800px) {
-	html { font-size: 1em;}
-	// .diagram {width: 100%;}
-	.description {width: 100%; padding-left: 5%; padding-right: 5%;}
-	.links a {display: block;}
-	.hero {padding-left: 40px; padding-right: 40px;}
-	.columnFull {padding-left: 10%; padding-right: 10%;}
-}
-
-.clearfix:after {
-	visibility: hidden;
-	display: block;
-	font-size: 0;
-	content: ' ';
-	clear: both;
-	height: 0;
-}
-
 form {
   background: rgba(255, 255, 255, 0.4);
   text-align: center;
@@ -379,4 +361,22 @@ input {
 	width: 280px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@media only screen and (max-width: 800px) {
+	html { font-size: 1em;}
+	.description {width: 100%; padding-left: 5%; padding-right: 5%;}
+	.links a {display: block;}
+	.hero {padding-left: 40px; padding-right: 40px;}
+	.columnFull {padding-left: 10%; padding-right: 10%;}
+  #nav-title {padding-left: 10%; padding-right: 10%;}
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: ' ';
+	clear: both;
+	height: 0;
 }
