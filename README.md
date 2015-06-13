@@ -1,21 +1,23 @@
 # BoxMe
 
+![img](http://i.imgur.com/dmA1xvQ.png)
+
 ## Table Of Contents
 
-Timeline
-Spiking
-Instructor Approved
-MVP
-Blockers
-Problem Solving
-Wins
-Tech-Required
-Technologies/Resources Introduced
-Scaleable Features
-Outstanding Blockers
-Resources
+###### Timeline
+###### Spiking
+###### Instructor Approved
+###### MVP
+###### Blockers
+###### Problem Solving
+###### Wins
+###### Tech-Required
+###### Technologies/Resources Introduced
+###### Scaleable Features
+###### Outstanding Blockers
+###### Resources
 
-### Timeline
+## Timeline
 
 #### Spiking
 
@@ -68,44 +70,44 @@ Learning how to use foundation and feeling really comfortable moving around font
 ##### Technologies/Resources Introduced
 ###### Implemented into the project
 
-Sinatra application
+- Sinatra application
 
-Foundation
+- Foundation
 
-Custom dataset can be implemented
+- Custom dataset can be implemented
 
-JSON API routes
+- JSON API routes
 
-Backbone.js
+- Backbone.js
 
-##### Scaleable Features
+##### Version 2.0
 
-Re work demo page to have custom colors inputed and the demo page structure match overall layout.
+- Re-work demo page to have custom colors inputed and the demo page structure match overall layout.
 
-Stripe work with a business bank account.
+- Stripe work with a business bank account.
 
-Introduce columns into the front page view.
+- Introduce columns into the front page view.
 
-Work on pitch content.
+- Work on pitch content.
 
-Work on container- on about page to show up.
+- Work on container- on about page to show up.
 
-Have icons spaced and resized to look good.
+- Have icons spaced and resized to look good.
 
 ##### Outstanding Blockers
 
-Work on container- on about page to show up.
+- Work on container- on about page to show up.
 
-Have icons spaced and resized to look good.
+- Have icons spaced and resized to look good.
 
-Work on business pitch and custom copy.
+- Work on business pitch and custom copy.
 
-Demo page- with images input.
+- Demo page- with logo input.
 
 #### Resources
 
-| https://css-tricks.com/ |
-| http://sass-lang.com/guide |
-| http://getbootstrap.com/ |
-| http://foundation.zurb.com/ |
-| http://fortawesome.github.io/Font-Awesome/ |
+- | https://css-tricks.com/ |
+- | http://sass-lang.com/guide |
+- | http://getbootstrap.com/ |
+- | http://foundation.zurb.com/ |
+- | http://fortawesome.github.io/Font-Awesome/ |
