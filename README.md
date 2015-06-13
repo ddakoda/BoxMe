@@ -49,19 +49,19 @@ https://github.com/ddakoda/BoxMe
 
 ![img](http://i.imgur.com/5bAst4l.png)
 
-###### Blockers
+##### Blockers
 
 Authentication for users.
 
 Sign-up and log-in - routing these to the right places.
 
-###### Problem Solving
+##### Problem Solving
 
 ###### Justifying solutions to problems encountered throughout the project.
 
 Bootstrap vs foundation - working on finding a solution to style the app while maintaining continuity throughout the site.
 
-###### Wins
+##### Wins
 
 ###### Small/large victories that were achieved throughout the project.
 
